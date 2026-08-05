@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>内容管理</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>内容管理</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item on" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">系统管理 / <b>内容管理</b></div>
+      <div style="margin-left:auto;" class="row"><a class="btn primary sm" href="skill-edit.html">＋ 新增技能</a><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>内容管理 <span class="badge blue">AI 应用开发</span></h1><p>岗位 → 阶段 → 技能 → 五件套（概念卡 / 资源 / 课件 / 小任务 / FAQ）</p></div>
+<div style="display:grid;grid-template-columns:260px 1fr;gap:14px;">
+  <div class="card" style="padding:14px;">
+    <div class="spread" style="margin-bottom:8px;"><b style="font-size:13px;">内容树</b><span class="badge gray">7 阶段</span></div>
+    <ul class="tree">
+      <li><span class="arrow">▾</span> AI 应用开发 <span class="n">37</span></li>
+      <li><ul>
+        <li>▸ S0 认知与准备 <span class="n">3</span></li>
+        <li>▸ S1 Python 编程基础 <span class="n">6</span></li>
+        <li class="on">▾ S2 大模型 API 与 Prompt <span class="n">6</span>
+          <ul>
+            <li>大模型基础概念</li>
+            <li style="color:var(--accent);font-weight:600;">OpenAI 兼容 API 调用</li>
+            <li>Prompt 工程基础</li>
+            <li>结构化输出</li>
+            <li>对话与多轮</li>
+            <li>流式输出</li>
+          </ul>
+        </li>
+        <li>▸ S3 应用开发与工程化 <span class="n">6</span></li>
+        <li>▸ S4 RAG 知识库问答 <span class="n">6</span></li>
+        <li>▸ S5 Agent 智能体 <span class="n">5</span></li>
+        <li>▸ S6 部署评估与作品集 <span class="n">5</span></li>
+      </ul></li>
+    </ul>
+  </div>
+  <div style="display:grid;gap:14px;align-content:start;">
+    <div class="card">
+      <div class="spread"><h3>技能列表 · S2 大模型 API 与 Prompt</h3><a class="btn primary sm" href="skill-edit.html">＋ 新增技能</a></div>
+      <div class="table-wrap" style="margin-top:12px;">
+        <table>
+          <thead><tr><th>技能</th><th>难度</th><th>五件套</th><th>状态</th><th style="text-align:right;">操作</th></tr></thead>
+          <tbody>
+            <tr><td><div class="name">大模型基础概念</div><div class="sub">LLM / Token / 上下文</div></td><td><span class="badge blue">核心</span></td><td><span class="badge green">5/5</span></td><td><span class="badge green">已启用</span></td><td style="text-align:right;"><a class="btn ghost sm" href="skill-edit.html">编辑</a></td></tr>
+            <tr><td><div class="name">OpenAI 兼容 API 调用</div><div class="sub">openai 库 / Chat Completions</div></td><td><span class="badge blue">核心</span></td><td><span class="badge orange">4/5</span></td><td><span class="badge green">已启用</span></td><td style="text-align:right;"><a class="btn ghost sm" href="skill-edit.html">编辑</a></td></tr>
+            <tr><td><div class="name">Prompt 工程基础</div><div class="sub">角色 / 指令 / few-shot</div></td><td><span class="badge blue">核心</span></td><td><span class="badge green">5/5</span></td><td><span class="badge green">已启用</span></td><td style="text-align:right;"><a class="btn ghost sm" href="skill-edit.html">编辑</a></td></tr>
+            <tr><td><div class="name">结构化输出</div><div class="sub">JSON / json mode</div></td><td><span class="badge orange">进阶</span></td><td><span class="badge green">5/5</span></td><td><span class="badge gray">草稿</span></td><td style="text-align:right;"><a class="btn ghost sm" href="skill-edit.html">编辑</a></td></tr>
+            <tr><td><div class="name">对话与多轮</div><div class="sub">消息列表 / 角色</div></td><td><span class="badge orange">进阶</span></td><td><span class="badge green">5/5</span></td><td><span class="badge gray">草稿</span></td><td style="text-align:right;"><a class="btn ghost sm" href="skill-edit.html">编辑</a></td></tr>
+            <tr><td><div class="name">流式输出</div><div class="sub">stream / 增量</div></td><td><span class="badge orange">进阶</span></td><td><span class="badge green">5/5</span></td><td><span class="badge gray">草稿</span></td><td style="text-align:right;"><a class="btn ghost sm" href="skill-edit.html">编辑</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

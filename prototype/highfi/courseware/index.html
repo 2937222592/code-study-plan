@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>课件管理</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>课件管理</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item on" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">系统管理 / <b>课件管理</b></div>
+      <div style="margin-left:auto;" class="row"><a class="btn primary sm" href="import.html">＋ 新增课件</a><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>课件管理 <span class="badge blue">28/37 技能已配课件</span></h1><p>课件 → 章节 → 页面；来源：B站开源优先，缺失则自制</p></div>
+<div class="card">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>课件</th><th>关联技能</th><th>章节/页数</th><th>来源</th><th>状态</th><th style="text-align:right;">操作</th></tr></thead>
+      <tbody>
+        <tr><td><div class="name">API 调用实战</div><div class="sub">OpenAI 兼容 API 调用</div></td><td><span class="badge gray">S2 · 核心</span></td><td class="muted">2 章 · 12 页</td><td><span class="badge green">B站开源 · 已标注</span></td><td><span class="badge green">已发布</span></td><td style="text-align:right;"><a class="btn ghost sm" href="chapters.html">章节</a><a class="btn ghost sm" href="chapters.html">编辑</a></td></tr>
+        <tr><td><div class="name">Prompt 工程入门</div><div class="sub">Prompt 工程基础</div></td><td><span class="badge gray">S2 · 核心</span></td><td class="muted">3 章 · 18 页</td><td><span class="badge green">B站开源 · 已标注</span></td><td><span class="badge green">已发布</span></td><td style="text-align:right;"><a class="btn ghost sm" href="chapters.html">章节</a><a class="btn ghost sm" href="chapters.html">编辑</a></td></tr>
+        <tr><td><div class="name">RAG 架构图解</div><div class="sub">RAG 概念</div></td><td><span class="badge gray">S4 · 核心</span></td><td class="muted">2 章 · 10 页</td><td><span class="badge orange">平台自制</span></td><td><span class="badge gray">草稿</span></td><td style="text-align:right;"><a class="btn ghost sm" href="chapters.html">章节</a><a class="btn ghost sm" href="chapters.html">编辑</a></td></tr>
+        <tr><td><div class="name">FastAPI 快速上手</div><div class="sub">FastAPI 基础</div></td><td><span class="badge gray">S3 · 核心</span></td><td class="muted">1 章 · 8 页</td><td><span class="badge green">B站开源 · 已标注</span></td><td><span class="badge gray">草稿</span></td><td style="text-align:right;"><a class="btn ghost sm" href="chapters.html">章节</a><a class="btn ghost sm" href="chapters.html">编辑</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row" style="margin-top:14px;justify-content:flex-end;"><a class="btn ghost sm" href="import.html">⬆ 导入 Markdown</a><button class="btn primary sm">＋ 新增课件</button></div>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

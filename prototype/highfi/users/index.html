@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>用户管理</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>用户管理</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item on" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">系统管理 / <b>用户管理</b></div>
+      <div style="margin-left:auto;" class="row"><input class="input" style="width:200px;" placeholder="搜索邮箱 / 昵称…"><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>用户管理 <span class="badge blue">1,286 人</span></h1><p>查看与治理用户；禁用后无法登录，学习数据保留</p></div>
+<div class="card">
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>用户</th><th>邮箱</th><th>角色</th><th>进度</th><th>连续打卡</th><th>状态</th><th style="text-align:right;">操作</th></tr></thead>
+      <tbody>
+        <tr><td><div class="row"><div class="avatar">张</div><div><div class="name">张三</div><div class="sub">UID 1024</div></div></div></td><td class="muted">zhangsan@qq.com</td><td><span class="badge gray">用户</span></td><td><div style="width:90px;"><div class="prog"><i style="width:32%"></i></div></div></td><td class="muted">🔥 5 天</td><td><span class="badge green">正常</span></td><td style="text-align:right;"><a class="btn ghost sm" href="detail.html">详情</a><button class="btn ghost sm">禁用</button></td></tr>
+        <tr><td><div class="row"><div class="avatar">李</div><div><div class="name">李四</div><div class="sub">UID 1025</div></div></div></td><td class="muted">lisi@163.com</td><td><span class="badge gray">用户</span></td><td><div style="width:90px;"><div class="prog"><i style="width:58%"></i></div></div></td><td class="muted">🔥 12 天</td><td><span class="badge green">正常</span></td><td style="text-align:right;"><a class="btn ghost sm" href="detail.html">详情</a><button class="btn ghost sm">禁用</button></td></tr>
+        <tr><td><div class="row"><div class="avatar" style="background:linear-gradient(135deg,#f87171,#f472b6);">广</div><div><div class="name">广告号</div><div class="sub">UID 1100</div></div></div></td><td class="muted">ad-xxxx@temp.com</td><td><span class="badge gray">用户</span></td><td><div style="width:90px;"><div class="prog"><i style="width:0%"></i></div></div></td><td class="muted">—</td><td><span class="badge red">已禁用</span></td><td style="text-align:right;"><a class="btn ghost sm" href="detail.html">详情</a><button class="btn ghost sm">启用</button></td></tr>
+        <tr><td><div class="row"><div class="avatar">管</div><div><div class="name">管理员</div><div class="sub">UID 0001</div></div></div></td><td class="muted">admin@techpath.cn</td><td><span class="badge blue">管理员</span></td><td class="muted">—</td><td class="muted">—</td><td><span class="badge green">正常</span></td><td style="text-align:right;"><a class="btn ghost sm" href="detail.html">详情</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

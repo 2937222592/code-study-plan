@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>帖子详情</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>帖子详情</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item on" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">讨论区管理 / <b>帖子详情</b></div>
+      <div style="margin-left:auto;" class="row"><a class="btn ghost sm" href="index.html">← 返回列表</a><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>帖子详情</h1><p><span class="badge gray">API 调用实战 · 第 3 章</span> Bearer Token 为什么要加 Bearer？</p></div>
+<div class="card">
+  <div class="row" style="align-items:flex-start;padding-bottom:12px;border-bottom:1px solid var(--line);"><div class="avatar">张</div><div style="flex:1;"><b style="font-size:13px;">张三</b><p class="muted" style="font-size:13px;margin-top:4px;">我照着课件写，发现 Authorization 的值是 "Bearer sk-xxx"，这个 Bearer 是必须的吗？</p></div></div>
+  <div class="row" style="align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);"><div class="avatar">李</div><div style="flex:1;"><b style="font-size:13px;">李四</b><p class="muted" style="font-size:13px;margin-top:4px;">Bearer 表示"持有者令牌"，是 HTTP 标准里的约定，服务端靠它识别令牌类型……</p><div class="row" style="margin-top:8px;"><span class="badge green">正常回复</span></div></div></div>
+  <div class="row" style="align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);"><div class="avatar">广</div><div style="flex:1;"><b style="font-size:13px;">广告号</b><p class="muted" style="font-size:13px;margin-top:4px;">加微信领取全套资料……（命中敏感词：加微信）</p><div class="row" style="margin-top:8px;"><span class="badge red">违规</span></div></div></div>
+</div>
+<div class="row" style="margin-top:16px;justify-content:flex-end;"><a class="btn ghost" href="index.html">← 返回列表</a><button class="btn danger">删除违规回复</button><button class="btn primary">标记已解决</button></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

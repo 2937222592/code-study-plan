@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>09 · 管理后台</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<div class="wf-tip">🧭 低保真线框图 · <b>09 · 管理后台</b>（仅管理员可见）</div>
+<div class="wf-header">
+  <div class="wf-logo">TechPath 后台</div>
+  <nav class="wf-nav">
+    <a class="on" href="#">内容管理</a>
+    <a href="#">讨论区管理</a>
+    <a href="#">课件来源 / 投诉</a>
+    <a href="#">用户</a>
+  </nav>
+  <div class="wf-right"><div class="wf-user">管理员</div></div>
+</div>
+<div class="wf-wrap">
+  <div class="wf-split">
+    <!-- 左侧内容树 -->
+    <div class="wf-box gray">
+      <div class="wf-label">内容树</div>
+      <ul class="wf-toc" style="margin-top:8px;">
+        <li>AI 应用开发（岗位）</li>
+        <li style="padding-left:20px;">S0 认知与准备</li>
+        <li style="padding-left:20px;" class="on">S2 大模型 API 与 Prompt</li>
+        <li style="padding-left:40px;">OpenAI 兼容 API 调用</li>
+        <li style="padding-left:40px;">Prompt 工程基础</li>
+        <li style="padding-left:40px;">结构化输出</li>
+        <li style="padding-left:40px;">……</li>
+        <li style="padding-left:20px;">S3 应用开发与工程化</li>
+      </ul>
+      <div style="margin-top:10px;border-top:1px dashed #c3c9d4;padding-top:10px;"><span class="wf-btn" style="width:100%;text-align:center;">＋ 新增阶段 / 技能</span></div>
+    </div>
+
+    <!-- 右侧编辑区 -->
+    <div class="wf-grid">
+      <div class="wf-card">
+        <div class="wf-label">技能编辑 · OpenAI 兼容 API 调用</div>
+        <div class="wf-cols" style="margin-top:8px;">
+          <div><div class="wf-label" style="margin-bottom:4px;">技能名称</div><div style="height:32px;border:1.5px dashed #b6bdcb;border-radius:6px;background:#fff;padding:0 8px;font-size:13px;color:#3a4152;display:flex;align-items:center;">OpenAI 兼容 API 调用</div></div>
+          <div><div class="wf-label" style="margin-bottom:4px;">难度</div><div style="height:32px;border:1.5px dashed #b6bdcb;border-radius:6px;background:#fff;padding:0 8px;font-size:13px;color:#3a4152;display:flex;align-items:center;">核心</div></div>
+        </div>
+        <div class="wf-label" style="margin:12px 0 4px;">五件套完整性</div>
+        <div class="wf-flex">
+          <span class="wf-tag green">概念卡 ✓</span>
+          <span class="wf-tag green">资源 2 ✓</span>
+          <span class="wf-tag green">课件 1 ✓</span>
+          <span class="wf-tag orange">小任务（待完善）</span>
+          <span class="wf-tag green">FAQ 3 ✓</span>
+        </div>
+      </div>
+
+      <div class="wf-card">
+        <div class="wf-label">课件管理 · API 调用实战</div>
+        <div class="wf-row"><b style="font-size:13px;">第一章 认识 API</b><span class="wf-tag">8 页</span><span class="wf-tag green">来源已标注</span><span style="margin-left:auto;" class="wf-btn">编辑</span></div>
+        <div class="wf-row"><b style="font-size:13px;">第二章 请求与鉴权</b><span class="wf-tag">6 页</span><span class="wf-tag green">来源已标注</span><span style="margin-left:auto;" class="wf-btn">编辑</span></div>
+        <div class="wf-flex" style="margin-top:8px;">
+          <span class="wf-btn">＋ 新增章节</span>
+          <span class="wf-btn">＋ 导入课件（Markdown）</span>
+        </div>
+      </div>
+
+      <div class="wf-card">
+        <div class="wf-label">讨论区治理（示例）</div>
+        <div class="wf-row"><b style="font-size:13px;">广告 / 无关内容</b><span class="wf-tag orange">待处理</span><span style="margin-left:auto;" class="wf-btn">删除</span><span class="wf-btn">禁言</span></div>
+        <div class="wf-row"><b style="font-size:13px;">正常提问</b><span class="wf-tag green">已解决</span><span style="margin-left:auto;" class="wf-btn">置顶</span></div>
+      </div>
+
+      <div class="wf-card">
+        <div class="wf-label">课件来源与投诉</div>
+        <div class="wf-row"><b style="font-size:13px;">课件「API 调用实战」</b><div class="meta">来源：B站 · 开源标注 · 原链接</div><span style="margin-left:auto;" class="wf-btn">查看来源</span></div>
+        <div class="wf-row"><b style="font-size:13px;">投诉：某课件疑似侵权</b><span class="wf-tag orange">处理中（24h 内）</span><span style="margin-left:auto;" class="wf-btn">下架</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wf-footer">TechPath Wireframe · 09 管理后台</div>
+</body>
+</html>

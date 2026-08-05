@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>02 · 技能详情</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<div class="wf-tip">🧭 低保真线框图 · <b>02 · 技能详情</b></div>
+<div class="wf-header">
+  <div class="wf-logo">TechPath 标志位</div>
+  <nav class="wf-nav">
+    <a href="01-路线总览.html">路线</a>
+    <a href="06-学习计划.html">学习计划</a>
+    <a href="07-我的笔记.html">我的笔记</a>
+    <a href="05-AI助教.html">AI 助教</a>
+  </nav>
+  <div class="wf-right"><div class="wf-user">头像 / 昵称</div></div>
+</div>
+<div class="wf-wrap">
+  <div class="meta" style="font-size:12px;color:#8a93a6;margin-bottom:6px;">路线 → S2 大模型 API 与 Prompt → <b>OpenAI 兼容 API 调用</b></div>
+  <div class="wf-flex" style="justify-content:space-between;">
+    <div class="wf-flex">
+      <h1 class="wf-page-title">OpenAI 兼容 API 调用</h1>
+      <span class="wf-tag blue">核心</span>
+      <span class="wf-tag orange">学习中</span>
+    </div>
+    <div class="wf-flex">
+      <a class="wf-btn" href="05-AI助教.html">🤖 问 AI</a>
+      <a class="wf-btn primary" href="03-课件阅读.html">进入课件学习 →</a>
+    </div>
+  </div>
+
+  <div class="wf-split" style="margin-top:16px;">
+    <div class="wf-grid">
+      <!-- 概念卡 -->
+      <div class="wf-card">
+        <div class="wf-label">① 概念卡 · 本站速览（3-5 分钟）</div>
+        <h4 style="margin-top:8px;">一句话解释</h4>
+        <p style="font-size:13px;color:#5a6375;">用一段话讲清楚什么是 API 调用（示意文字）。</p>
+        <h4 style="margin-top:10px;">生活化类比</h4>
+        <p style="font-size:13px;color:#5a6375;">类比占位：把 API 比作餐厅点餐等（示意）。</p>
+        <h4 style="margin-top:10px;">代码示例</h4>
+        <div class="wf-box gray" style="font-family:Consolas,monospace;font-size:12px;color:#3a4152;">from openai import OpenAI ... （代码占位）</div>
+        <h4 style="margin-top:10px;">常见坑</h4>
+        <ul style="font-size:13px;color:#5a6375;padding-left:18px;">
+          <li>API Key 不要硬编码在代码里</li>
+          <li>注意上下文窗口长度限制</li>
+          <li>网络超时需要重试与错误处理</li>
+        </ul>
+      </div>
+
+      <!-- 精选资源 -->
+      <div class="wf-card">
+        <div class="wf-label">② 精选外部资源</div>
+        <div class="wf-row">
+          <span class="wf-tag">视频</span>
+          <div style="flex:1"><b style="font-size:13px;">B站：《大模型 API 调用入门》</b><div class="meta">约 45 分钟 · 入门</div></div>
+          <a class="wf-btn" href="03-课件阅读.html">课件</a>
+          <span class="wf-btn">外部观看 ↗</span>
+        </div>
+        <div class="wf-row">
+          <span class="wf-tag">文档</span>
+          <div style="flex:1"><b style="font-size:13px;">DeepSeek 官方 API 文档</b><div class="meta">图文 · 入门</div></div>
+          <span class="wf-btn">课件</span>
+          <span class="wf-btn">外部观看 ↗</span>
+        </div>
+      </div>
+
+      <!-- 小任务 -->
+      <div class="wf-card">
+        <div class="wf-label">③ 动手小任务（20-60 分钟）</div>
+        <h4 style="margin-top:8px;">任务：写出你的第一个「你好」程序</h4>
+        <p style="font-size:13px;color:#5a6375;">任务描述示意：调用 API 输出一句问候，并打印返回的 Token 用量。</p>
+        <div style="font-size:12px;color:#5a6375;margin-top:6px;">✅ 验收：程序可运行并打印正确输出；Key 通过环境变量读取。</div>
+        <div style="font-size:12px;color:#8a93a6;margin-top:4px;">参考思路：…（不提供完整答案，可让 AI 点评）</div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="wf-card">
+        <div class="wf-label">④ FAQ（常见问题）</div>
+        <div class="wf-row"><b style="font-size:13px;">Q：为什么输出不稳定？</b></div>
+        <div class="wf-row"><b style="font-size:13px;">Q：Token 超了怎么办？</b></div>
+        <div class="wf-row"><b style="font-size:13px;">Q：怎么省钱？</b></div>
+        <div class="meta" style="padding-top:8px;">点击展开答案 · 也可直接<a href="05-AI助教.html">问 AI 助教 →</a></div>
+      </div>
+    </div>
+
+    <!-- 右侧辅助栏 -->
+    <div class="wf-grid">
+      <div class="wf-box gray">
+        <div class="wf-label">学习进度</div>
+        <div style="font-size:22px;font-weight:700;">1/4</div>
+        <div class="wf-bar"><i style="width:25%"></i></div>
+        <div class="meta" style="font-size:12px;color:#8a93a6;">概念卡 ✓ · 资源 · 小任务 · 复习</div>
+      </div>
+      <div class="wf-box">
+        <div class="wf-label">本技能课件</div>
+        <div class="wf-row"><b style="font-size:13px;">课件：API 调用实战</b><span class="wf-tag green">2 章节</span></div>
+        <div class="meta" style="font-size:12px;color:#8a93a6;">阅读进度 1/12 页 · <a href="03-课件阅读.html">继续阅读 →</a></div>
+      </div>
+      <div class="wf-box">
+        <div class="wf-label">待办复习</div>
+        <div class="meta" style="font-size:12px;color:#8a93a6;">暂无 · 学完小任务后建议 3 天后复习</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wf-footer">TechPath Wireframe · 02 技能详情</div>
+</body>
+</html>

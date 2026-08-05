@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小任务编辑</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>小任务编辑</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item on" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">内容管理 / <b>小任务编辑</b></div>
+      <div style="margin-left:auto;" class="row"><a class="btn ghost sm" href="index.html">← 返回列表</a><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>编辑小任务 <span class="badge gray">OpenAI 兼容 API 调用</span></h1><p>20~60 分钟；不判题，提供参考思路，可让 AI 点评</p></div>
+<div class="card">
+  <div class="form-grid">
+    <div class="full"><label class="label">任务标题</label><input class="input" value="写出你的第一个「你好」程序"></div>
+    <div class="full"><label class="label">任务描述</label><textarea class="input" rows="4" placeholder="调用大模型 API 输出一句问候，并打印返回的 Token 用量。"></textarea></div>
+    <div class="full"><label class="label">验收标准（每行一条）</label><textarea class="input" rows="3">程序可运行并打印正确输出
+API Key 通过环境变量读取</textarea></div>
+    <div class="full"><label class="label">参考思路（不提供完整答案）</label><textarea class="input" rows="3">先读官方文档的最小示例 → 拆解为 3 步：构造客户端、发请求、打印结果</textarea></div>
+  </div>
+</div>
+<div class="row" style="margin-top:16px;justify-content:flex-end;"><a class="btn ghost" href="skill-edit.html">返回技能</a><button class="btn primary">保存小任务</button></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

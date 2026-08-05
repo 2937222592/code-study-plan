@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>章节管理</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>章节管理</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item on" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">课件管理 / <b>章节管理</b></div>
+      <div style="margin-left:auto;" class="row"><a class="btn ghost sm" href="index.html">← 返回课件列表</a><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>课件「API 调用实战」<span class="badge green">B站开源 · 已标注</span></h1><p>章节对应视频分段 · 每章一个讨论区</p></div>
+<div class="card">
+  <div class="form-grid" style="margin-bottom:14px;">
+    <div><label class="label">来源类型</label><div class="seg"><button class="on">B站开源</button><button>平台自制</button></div></div>
+    <div><label class="label">原视频 / 来源链接</label><input class="input" value="https://www.bilibili.com/video/BVxxxxxx"></div>
+    <div class="full"><label class="label">来源创作者 / 授权说明</label><input class="input" value="UP 主：xxx · 课件标注开放使用"></div>
+  </div>
+  <div class="spread" style="border-top:1px solid var(--line);padding-top:14px;"><h3>章节与页面</h3><button class="btn ghost sm">＋ 新增章节</button></div>
+  <div style="margin-top:8px;">
+    <div class="row" style="padding:10px 0;border-bottom:1px solid var(--line);"><span class="badge blue">第 1 章 认识 API</span><span class="faint" style="font-size:12px;">8 页</span><span style="margin-left:auto;"><a class="btn ghost sm" href="slide-edit.html">页面</a><button class="btn ghost sm">编辑</button><button class="btn ghost sm">删除</button></span></div>
+    <div class="row" style="padding:10px 0;border-bottom:1px solid var(--line);"><span class="badge blue">第 2 章 请求与鉴权</span><span class="faint" style="font-size:12px;">6 页</span><span style="margin-left:auto;"><a class="btn ghost sm" href="slide-edit.html">页面</a><button class="btn ghost sm">编辑</button><button class="btn ghost sm">删除</button></span></div>
+  </div>
+</div>
+<div class="card" style="margin-top:14px;">
+  <h3>第 2 章 页面列表</h3>
+  <div class="table-wrap" style="margin-top:10px;">
+    <table>
+      <thead><tr><th>页</th><th>标题</th><th>内容类型</th><th style="text-align:right;">操作</th></tr></thead>
+      <tbody>
+        <tr><td class="muted">1</td><td><div class="name">什么是请求头</div></td><td><span class="badge gray">图文</span></td><td style="text-align:right;"><a class="btn ghost sm" href="slide-edit.html">编辑</a></td></tr>
+        <tr><td class="muted">2</td><td><div class="name">Bearer 鉴权示例</div></td><td><span class="badge blue">代码</span></td><td style="text-align:right;"><a class="btn ghost sm" href="slide-edit.html">编辑</a></td></tr>
+        <tr><td class="muted">3</td><td><div class="name">错误处理要点</div></td><td><span class="badge gray">图文</span></td><td style="text-align:right;"><a class="btn ghost sm" href="slide-edit.html">编辑</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row" style="margin-top:12px;"><a class="btn ghost sm" href="slide-edit.html">＋ 新增页面</a></div>
+</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

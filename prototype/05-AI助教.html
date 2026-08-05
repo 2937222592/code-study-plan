@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>05 · AI 助教</title>
+<link rel="stylesheet" href="assets/wireframe.css">
+</head>
+<body>
+<div class="wf-tip">🧭 低保真线框图 · <b>05 · AI 学习助教</b>（上下文感知：知道你学到哪）</div>
+<div class="wf-header">
+  <div class="wf-logo">TechPath 标志位</div>
+  <nav class="wf-nav">
+    <a href="01-路线总览.html">路线</a>
+    <a href="06-学习计划.html">学习计划</a>
+    <a href="07-我的笔记.html">我的笔记</a>
+    <a class="on" href="05-AI助教.html">AI 助教</a>
+  </nav>
+  <div class="wf-right"><div class="wf-user">头像 / 昵称</div></div>
+</div>
+<div class="wf-wrap" style="max-width:820px;">
+  <h1 class="wf-page-title">AI 学习助教</h1>
+  <p class="wf-page-desc">我在你当前的学习上下文里帮你答疑，不直接替你做作业。</p>
+
+  <!-- 上下文信息 -->
+  <div class="wf-box gray">
+    <div class="wf-label">当前学习上下文</div>
+    <div class="wf-flex" style="margin-top:6px;">
+      <span class="wf-tag blue">S2 · 大模型 API 与 Prompt</span>
+      <span class="wf-tag">技能：OpenAI 兼容 API 调用</span>
+      <span class="wf-tag">课件第 3 页：鉴权与 Key</span>
+      <span class="wf-tag orange">1 个「没懂」标记：Token</span>
+    </div>
+  </div>
+
+  <div class="wf-box" style="margin-top:14px;min-height:320px;">
+    <div class="wf-chat">
+      <div class="wf-bubble ai"><b>我</b><br>什么是 Token？为什么我的文本会被拆成很多段？</div>
+    </div>
+    <div class="wf-chat">
+      <div class="wf-bubble ai">Token 是大模型处理文本的最小单位，可以理解为"词块"……<br><br>🔗 建议：复习课件第 2 页「Token 与上下文」；也可以看一下概念卡里的类比。</div>
+    </div>
+    <div class="wf-chat">
+      <div class="wf-bubble me">还是不太懂，能换个说法吗？</div>
+    </div>
+    <div class="wf-chat">
+      <div class="wf-bubble ai">打个比方：英文就像把句子按空格切开，中文则是按词切开……<br><br><span class="wf-tag green">已重新讲解</span> <span class="wf-tag orange">已标记「没懂」→ 将安排复习</span></div>
+    </div>
+  </div>
+
+  <div class="wf-box" style="margin-top:14px;">
+    <div class="wf-label">建议提问</div>
+    <div class="wf-flex" style="margin-top:8px;">
+      <span class="wf-btn">什么是温度参数？</span>
+      <span class="wf-btn">帮我解释课件第 3 页</span>
+      <span class="wf-btn">小任务：给个思路别给答案</span>
+      <span class="wf-btn">总结一下我今天的笔记</span>
+    </div>
+  </div>
+
+  <div class="wf-box gray" style="margin-top:14px;">
+    <div class="wf-flex">
+      <div style="flex:1;height:38px;border:1.5px dashed #b6bdcb;border-radius:8px;background:#fff;display:flex;align-items:center;padding:0 10px;color:#9aa3b5;font-size:13px;">输入你的问题……</div>
+      <span class="wf-btn primary">发送</span>
+      <span class="wf-btn">🗒 没懂，换个讲法</span>
+    </div>
+    <div class="meta" style="font-size:12px;color:#8a93a6;margin-top:6px;">今日 AI 额度：还剩 12 次 · 由 DeepSeek 提供 · 内容仅供参考</div>
+  </div>
+</div>
+<div class="wf-footer">TechPath Wireframe · 05 AI 助教</div>
+</body>
+</html>

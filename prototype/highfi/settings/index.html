@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>系统设置</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>系统设置</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item on" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">系统管理 / <b>系统设置</b></div>
+      <div style="margin-left:auto;" class="row"><input class="input" style="width:200px;" placeholder="搜索…"><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>系统设置</h1><p>站点信息、学习计划默认值、AI 模型与限额（保存后全局生效）</p></div>
+<div class="card" style="margin-bottom:14px;">
+  <h3>站点信息</h3>
+  <div class="form-grid" style="margin-top:12px;">
+    <div><label class="label">站点名称</label><input class="input" value="TechPath 学习陪跑平台"></div>
+    <div><label class="label">站点描述</label><input class="input" value="面向编程初学者的学习路线 · 课件 · AI 助教"></div>
+  </div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+  <h3>学习计划默认值</h3>
+  <div class="form-grid" style="margin-top:12px;">
+    <div><label class="label">默认每日学习时长（分钟）</label><input class="input" type="number" value="60"></div>
+    <div><label class="label">未完成任务顺延</label><div class="seg"><button class="on">自动顺延</button><button>不顺延</button></div></div>
+  </div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+  <h3>AI 模型与限额（LangChain 服务）</h3>
+  <div class="form-grid" style="margin-top:12px;">
+    <div><label class="label">模型</label><div class="seg"><button class="on">deepseek-chat</button><button>deepseek-reasoner</button><button>gpt-4o-mini</button></div></div>
+    <div><label class="label">API Key（加密存储，不回显）</label><input class="input" type="password" value="sk-****************"></div>
+    <div><label class="label">每用户每日 AI 调用上限</label><input class="input" type="number" value="20"></div>
+    <div><label class="label">开发模式</label><div class="seg"><button class="on">真实 API</button><button>Mock 模式</button></div></div>
+  </div>
+  <div class="row" style="margin-top:14px;"><span class="badge blue">LangChain</span><span class="muted" style="font-size:12.5px;">AI 调用统一收敛在 ai_service 模块 · 修改后立即生效</span></div>
+</div>
+<div class="card">
+  <h3>内容与合规</h3>
+  <div class="form-grid" style="margin-top:12px;">
+    <div><label class="label">课件投诉处理时限（小时）</label><input class="input" type="number" value="24"></div>
+    <div><label class="label">讨论区敏感词过滤</label><div class="row"><div class="switch on"></div><span class="muted" style="font-size:13px;">启用（自动拦截并提示）</span></div></div>
+  </div>
+</div>
+<div class="row" style="margin-top:16px;justify-content:flex-end;"><button class="btn primary">保存设置</button></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

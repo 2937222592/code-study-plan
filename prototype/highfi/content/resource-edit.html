@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>资源编辑</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="bg"><div class="blob a"></div><div class="blob b"></div><div class="grid"></div></div>
+<div class="wf-tip">🎨 高保真 · <b>资源编辑</b></div>
+<div class="admin">
+  <aside class="side">
+    <div class="logo"><span style="font-size:20px;">🧭</span> Tech<em>Path</em></div>
+    <a class="nav-item" href="../dashboard/index.html">📊 数据概览</a>
+    <a class="nav-item on" href="../content/index.html">🗂 内容管理</a>
+    <a class="nav-item" href="../courseware/index.html">📚 课件管理</a>
+    <a class="nav-item" href="../discussion/index.html">💬 讨论区管理 <span class="cnt">3</span></a>
+    <a class="nav-item" href="../complaints/index.html">🚩 课件投诉 <span class="cnt">1</span></a>
+    <div class="grp">系统管理</div>
+    <a class="nav-item" href="../users/index.html">👥 用户管理</a>
+    <a class="nav-item" href="../roles/index.html">🛡️ 角色管理</a>
+    <a class="nav-item" href="../menus/index.html">📑 菜单管理</a>
+    <a class="nav-item" href="../settings/index.html">⚙️ 系统设置</a>
+    <a class="nav-item" href="../logs/index.html">🧾 操作日志</a>
+    <a href="../index.html" style="display:block;padding:10px 12px;font-size:12.5px;color:var(--text-faint);">← 高保真目录</a>
+    <div class="foot">
+      <div class="avatar">管</div>
+      <div><b style="font-size:13px;">管理员</b><br><span class="faint" style="font-size:11px;">admin@techpath.cn</span></div>
+      <span style="margin-left:auto;cursor:pointer;color:var(--text-faint);">⎋</span>
+    </div>
+</aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumb">内容管理 / <b>资源编辑</b></div>
+      <div style="margin-left:auto;" class="row"><a class="btn ghost sm" href="index.html">← 返回列表</a><div class="avatar">管</div></div>
+    </header>
+    <div class="content">
+<div class="page-head"><h1>编辑精选资源 <span class="badge gray">OpenAI 兼容 API 调用</span></h1><p>外部视频 / 文档；资源需关联课件以保留学习沉淀</p></div>
+<div class="card">
+  <div class="form-grid">
+    <div><label class="label">资源类型</label><div class="seg"><button class="on">视频</button><button>官方文档</button><button>图文教程</button></div></div>
+    <div><label class="label">标题</label><input class="input" value="B站：《大模型 API 调用入门》"></div>
+    <div class="full"><label class="label">链接</label><input class="input" value="https://www.bilibili.com/video/BVxxxxxx"></div>
+    <div><label class="label">时长（视频）</label><input class="input" placeholder="45 分钟"></div>
+    <div><label class="label">难度</label><div class="seg"><button class="on">入门</button><button>进阶</button><button>高级</button></div></div>
+    <div class="full"><label class="label">推荐理由（为什么选它、看哪部分即可）</label><input class="input" value="用 45 分钟讲清 API 调用全过程，只看 00:00-20:00 即可"></div>
+    <div class="full"><label class="label">关联课件</label><input class="input" value="API 调用实战（可留空：无课件则仅外部观看）"></div>
+  </div>
+</div>
+<div class="row" style="margin-top:16px;justify-content:flex-end;"><a class="btn ghost" href="skill-edit.html">返回技能</a><button class="btn primary">保存资源</button></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
