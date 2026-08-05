@@ -1,11 +1,13 @@
 import { MOCK_ROUTES } from './mock'
 
 const MOCK = import.meta.env.VITE_API_MOCK !== 'false'
+const AUTH_REAL = import.meta.env.VITE_AUTH_REAL === 'true' // 注册/登录已接入真实后端
 const BASE = import.meta.env.VITE_API_BASE || '/api'
 const delay = (ms) => new Promise((r) => setTimeout(r, ms))
 
 export async function request(path, { method = 'GET', body } = {}) {
-  if (MOCK) {
+  const useMock = MOCK && !(AUTH_REAL && path.startsWith('/auth/'))
+  if (useMock) {
     await delay(160)
     const key = `${method} ${path}`
     const handler = MOCK_ROUTES[key] ?? MOCK_ROUTES[path]
@@ -21,6 +23,6 @@ export async function request(path, { method = 'GET', body } = {}) {
     body: body ? JSON.stringify(body) : undefined,
   })
   const json = await res.json()
-  if (json.code !== 0) throw new Error(json.message)
+  if (json.code !== 0) throw new Error(json.message || '请求失败')
   return json.data
 }

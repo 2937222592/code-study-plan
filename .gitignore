@@ -22,3 +22,7 @@ dist/
 Thumbs.db
 # 日志
 *.log
+
+# 数据库文件
+*.db
+*.sqlite3

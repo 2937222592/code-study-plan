@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     app_name: str = "TechPath API"
     debug: bool = True
     database_url: str = "sqlite:///./techpath.db"
-    secret_key: str = "change-me-in-prod"
+    secret_key: str = "dev-secret-change-me-0123456789abcdef"
     access_token_expire_minutes: int = 60 * 24 * 7
 
     # AI（LangChain + DeepSeek）
